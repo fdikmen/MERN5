@@ -1,11 +1,17 @@
 // Created by "rccp" snippet
-import PropTypes from 'prop-types';
-import React, { Component } from 'react';
+import PropTypes from "prop-types";
+import React, { Component } from "react";
 
 export default class PTSample extends Component {
-  
-static propTypes={name:PropTypes.number};
+  static propTypes = { name: PropTypes.string.isRequired,
+age:PropTypes.oneOfType([PropTypes.number,PropTypes.bool]),
+user:PropTypes.shape({id:PropTypes.number,username:PropTypes.string}) };
   render() {
-    return <div>{this.props.name}</div>;
+      let {name,age,user}=this.props;
+    return (
+      <div style={{ border: "3px dotted gray", padding: "10px" }}>
+        {name}-{age}
+      </div>
+    );
   }
 }
