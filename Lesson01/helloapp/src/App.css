@@ -10,6 +10,9 @@
   color: red;
   font-weight: bold;
 }
+.blogItem{
+  border:1px solid blue;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

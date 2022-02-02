@@ -12,7 +12,7 @@ function App() {
   </div>
   return (
     <div className="App">
-     {content}
+     {/* {content} */}
       <BlogComp/>
 {/* <BlogComp></BlogComp> */}
     </div>

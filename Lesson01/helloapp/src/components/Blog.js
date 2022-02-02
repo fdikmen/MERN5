@@ -10,9 +10,9 @@ class Blog extends Component {
   render() {
     return <div>
         Blog JS
-        <BlogItem/>
-        <BlogItem/>
-        <BlogItem/>
+        <BlogItem desc="Blog One Description"/>
+        <BlogItem name="Name props"/>
+        <BlogItem name="Name3 props" desc="Blog Three Description"/>
     </div>
   }
 }
