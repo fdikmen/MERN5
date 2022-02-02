@@ -1,0 +1,10 @@
+30012201. React-Theoretical
+30012202. NodeJS
+30012203. Installing NODEJS
+30012204. Installing VS Code
+30012205. ECMAScript
+30012206. VSCode Extensions
+30012207. First App - Hello World with React
+30012208. Bug Fixed: Policy Error
+
+npx create-react-app [my-app]
