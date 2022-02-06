@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import BlogItem from "./BlogItem";
 import PTSample from "./PTSample";
+import SampleConst from "./SampleConst";
 
 /*class Blog extends React.Component
 {
@@ -12,6 +13,7 @@ class Blog extends Component {
     let name="Tommy";
     let age=27;
     let person = {id:"Test",username:"Ema"}
+    
 
     return (
       <div
@@ -24,16 +26,16 @@ class Blog extends Component {
         {/* {  blogInfos.map((item,i)=> console.log("DATA::",item.textDesc," Index:",i) )} */}
         {/* <BlogItem count={0} head="Head" desc="Desc"/> */}
         
-        
-        <PTSample user={person} name={name} age={age} />
+        <SampleConst value1="88" value2="Test"/>
+        {/* <PTSample user={person} name={name} age={age} surname="Emma"/> */}
 
 
-        {this.props.data.map((item, i) => (
+        {/* {this.props.data.map((item, i) => (
           <div key={i}>
             <BlogItem count={i} head={item.textHead} desc={item.textDesc} />
             <h4>Looping</h4>
           </div>
-        ))}
+        ))} */}
       </div>
     );
   }
