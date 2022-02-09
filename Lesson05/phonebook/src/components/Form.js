@@ -25,9 +25,21 @@ export default class Form extends Component {
       width: "400px",
       textIndent: "10px",
     };
+    //console.log(this.props)
+    const onSubmitFunc=(event)=>{
+      event.preventDefault()
+      if (this.state.name === '') {
+        alert("Name not be blank!!!")
+      } else {
+        console.log("CHILD-1-onSubmitFunc")
+      this.props.addContact({...this.state});
+      this.setState({name:'',phone:''})
+      }
+    }
     return (
       <div>
-        <form style={{ width: "400px", margin: "0 auto", padding: "0" }}>
+        <form
+         style={{ width: "400px", margin: "0 auto", padding: "0" }}>
           <input
             style={formInputStyle}
             value={this.state.name}
@@ -45,9 +57,25 @@ export default class Form extends Component {
             id="phone"
             placeholder="Enter a phone..."
           ></input>
-          <button>Add</button>
+          <button onClick={onSubmitFunc}>Add</button>
         </form>
       </div>
     );
   }
 }
+
+
+/*--------------------
+const students=
+{
+  name:"Tommy",
+  surname:"Emma"
+}
+
+var test = students.name
+---------------------
+const {name,surname} = students
+
+var test = name
+var test2 = surname
+*/
