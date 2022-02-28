@@ -1,0 +1,21 @@
+28022201. Summary
+28022202. Central Route File
+28022203. Nested Routes
+State.js->Expenses.js
+State.js->Incomes.js
+28022204. Using Params in Nested Route
+28022205. Any text at the end of the path
+28022206. Summary For Routes
+28022207. Redux
+28022208. Why Redux?
+28022209. Redux Data Flow
+Pure Function? Store Action Reducer
+28022210. Using Redux
+28022211. Installing Redux
+npm i redux + npm i react-redux => npm i redux react-redux
+28022212. Create a Store
+28022213. Update Store with dispatch method
+28022214. Using Store Subscribe Method
+28022215. Multi Reducer with CombineReducer
+28022216. Set Intial State to Reducer
+28022217. Summary for Redux
