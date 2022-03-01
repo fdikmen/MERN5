@@ -17,5 +17,5 @@ npm i redux + npm i react-redux => npm i redux react-redux
 28022213. Update Store with dispatch method
 28022214. Using Store Subscribe Method
 28022215. Multi Reducer with CombineReducer
-28022216. Set Intial State to Reducer
+28022216. Set Initial State to Reducer
 28022217. Summary for Redux
