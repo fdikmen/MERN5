@@ -3,28 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {createStore,combineReducers} from 'redux'
+import {createStore} from 'redux'
+import {Provider} from 'react-redux'
+import rootReducer from './reducers/rootReducer';
 
-function myReducer(state,action){
-  //console.log("State:",state," Action:",action)
-  if (action.type === 'changeTheState') {
-    return action.payload.newState
-  } 
-  return "State Text"}
-
-  function userReducer(state="",action){ return state  }  
-  function productReducer(state=[],action){return state  }
-
-  const rootReducer = combineReducers(
-    { userReducer, productReducer, myReducer });
 
 const myStore = createStore(rootReducer,
   {
   productReducer:[{name:'Sony',type:'Mp3 Player'}],
-  myReducer:'First Text'}
+  myReducer:'First Text'},
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
   );//Create your store
 //console.log("Old State:",myStore.getState())
-
+/*
 const action={
   type:'changeTheState',//uniqe Id
   payload:{newState:'My new State'}
@@ -42,13 +33,19 @@ myStore.dispatch(action)
 //console.log("Last State:",myStore.getState())
 
 myStore.dispatch(action2)
-console.log("Last State:",myStore.getState())
+//console.log("Last State:",myStore.getState())
 
-
-
+const action3={
+  type:'userUpdate',
+  payload:{user:'Tommy'}
+}
+myStore.dispatch(action3)
+*/
 ReactDOM.render(
   <React.StrictMode>
+    <Provider store={myStore}>
     <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
