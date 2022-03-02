@@ -1,0 +1,15 @@
+02032201. Summary
+02032202. Redux Dev Tools
+https://github.com/zalmoxisus/redux-devtools-extension
+
+window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+
+02032203. Testing ReduxDevTools
+02032204. Provider
+npm i redux
+npm i react-redux
+02032205. Create Folder Structor for Redux
+02032206. Export Combine Reducer
+02032207. Question
+02032208. Connect Store From Any Component
+02032209. mapStateToProps
