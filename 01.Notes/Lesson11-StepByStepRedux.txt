@@ -1,0 +1,9 @@
+1- Create a Reducer + Combine
+2- Create a Store
+3- Provider for Store
+4- Connect To Store
+5- Get State FROM STORE (mapStateToProps)
+6- Create a Action
+7- mapDispatchToProps
+-----------------------------
+action-reducer-using
