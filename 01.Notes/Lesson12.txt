@@ -1,0 +1,18 @@
+06032201. Summary
+06032202. Send/Get data to Store
+06032203. Questions
+06032204. Sync - Async - Middleware
+---->X---->Y
+---->X---->Middleware---->Y
+06032205. Thunk Middleware
+06032206. Installing Thunk Middleware
+combineReducers --->Merge Reducers
+applyMiddleware --->Merge Middleware & Enable
+compose  ----> Merge Extension
+06032207. Summary for Middleware
+06032208. Using Thunk - Get data from API
+06032209. Questions
+06032210. set Data to Reducer from API
+06032211. Creating Action/Reducer for error
+06032212. Using TRY-CATCH
+06032213. Call API with ASYNC
