@@ -3,16 +3,23 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {createStore} from 'redux'
+import {createStore,compose,applyMiddleware} from 'redux'
 import {Provider} from 'react-redux'
 import rootReducer from './reducers/rootReducer';
+import thunk from 'redux-thunk'
 
 
+const allEnhancers = compose(
+  applyMiddleware(thunk),
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+)
+
+//createStore(Reducer , InitialData , Extension)
 const myStore = createStore(rootReducer,
   {
   productReducer:[{name:'Sony',type:'Mp3 Player'}],
   myReducer:'First Text'},
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  allEnhancers
   );//Create your store
 //console.log("Old State:",myStore.getState())
 /*
