@@ -1,0 +1,6 @@
+07032201. Summary
+07032202. Logger Middleware
+07032203. Design Patterns -SOLID
+07032204. Call API with Redux
+07032205. Async Actions Pattern (Promise Middleware)
+07032206. Counter App with Redux
