@@ -5,12 +5,7 @@ export const GET_USER_ERROR = 'GET_USER_ERROR'
 //CRUD--Create-Read-Update-Delete
 //Return Object Action
 export function updateUser(newUser){
-    return {
-        type:UPDATE_USER,
-        payload:{
-            user:newUser
-        }
-    }
+    return {type:UPDATE_USER, payload:{user:newUser}}
 }
 // Arrow Func: ()=>{}
 // Arrow Func: (x)=>{return "YYYY"}  ----------> x => {"YYYY"}

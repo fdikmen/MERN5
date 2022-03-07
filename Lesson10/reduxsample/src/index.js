@@ -7,10 +7,13 @@ import {createStore,compose,applyMiddleware} from 'redux'
 import {Provider} from 'react-redux'
 import rootReducer from './reducers/rootReducer';
 import thunk from 'redux-thunk'
+import logger from 'redux-logger'
+import axios from 'axios';
+import promise from 'redux-promise-middleware'
 
 
 const allEnhancers = compose(
-  applyMiddleware(thunk),
+  applyMiddleware(thunk,promise,logger),
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
 
@@ -48,6 +51,33 @@ const action3={
 }
 myStore.dispatch(action3)
 */
+
+/*myStore.dispatch(dispatch=>{
+  dispatch({type:'FETCH_POSTS_START'})
+  axios.get('https://jsonplaceholder.typicode.com/posts')
+  .then(res=>res.data)
+  .then(data=>dispatch({
+    type:'RECEIVE_POSTS',
+    payload:data
+  }))
+  .catch(err=>dispatch({
+    type:'FETCH_POSTS_ERROR',
+    payload: err
+  }))
+})*/
+// XXXX_PENDING XXXX_FULFILLED XXXX_REJECTED
+myStore.dispatch({
+  type:"CUSTOMTYPE",
+  payload: axios.get('https://jsonplaceholder.typicode.com/posts')
+  .then(r=>r.data)
+})
+
+myStore.dispatch({
+  type:"USER",
+  payload: axios.get('https://jsonplaceholder.typicode.com/users')
+  .then(r=>r.data)
+})
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={myStore}>

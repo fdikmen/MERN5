@@ -12,7 +12,7 @@ export class User extends Component {
     };
     const updateInputValue = (evt)=>{this.setState({inputValue:evt.target.value})}
     const onGetUser = ()=>{this.props.getUser();}
-    console.log("User Comp.Props:", this.props,this.state);
+    //console.log("User Comp.Props:", this.props,this.state);
     return (
       <div>
         User Reducer(User State): {this.props.userReducer}
@@ -46,3 +46,33 @@ const mergeProps = (propsFromState, propsFromDispatch, ownProps) => {
 
 //export default connect(mapStateToProps,mapDispatchToProps,mergeProps)(User)
 export default connect(mapStateToProps, mapDispatchToProps)(User);
+
+//-----------------------FUNC COMPONENT----------------------------------------------------
+
+
+/* Created by "rfcredux" snippet. Connect with Func Comp.
+import React from 'react'
+import { connect } from 'react-redux'
+
+export const User = (props) => {
+  return (
+    <div>User</div>
+  )
+}
+
+const mapStateToProps = (state) => ({})
+
+const mapDispatchToProps = {}
+
+export default connect(mapStateToProps, mapDispatchToProps)(User)
+*/
+
+
+
+
+
+
+
+
+
+
