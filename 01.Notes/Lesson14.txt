@@ -1,0 +1,27 @@
+09032201. Summary
+09032202. Movie App
+09032203. Create Project
+09032204. Delete Unnecessary Files
+09032205. Folder Structure
+09032206. Installation Redux & Thunk
+09032207. Create A Store
+09032208. Creating Reducers
+09032209. Question
+09032210. Using Thunk Middleware
+09032211. Question
+09032212. Installing Redux DevTools
+09032213. Enable/Connect Redux DevTools
+09032214. Store Provider
+09032215. Create A New Component(MoviesPage)
+09032216. Installing React Router Dom
+09032217. Questions
+09032218. Connect to Store From MoviePage Comp.
+09032219. PropTypes
+09032220. Create A New Component(MoviesList)
+09032221. SemanticUI-Kit
+09032222. Installing SemanticUI-Kit
+09032223. Exist Theme Usage From SemanticUI
+09032224. Clear Code for Theme
+09032225. Create A New Component(Footer.js)
+09032226. Create A New Component(Header.js)
+09032227. MOCK API
