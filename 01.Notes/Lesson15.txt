@@ -1,0 +1,20 @@
+13032201. Bug Fixed (SSL & SemanticUI Link)
+13032202. Summary
+13032203. Create A Action (FETCH-MOVIE)
+13032204. Question
+13032205. Logger Middleware
+13032206. Create A Action (FETCH-MOVIES-ERROR)
+13032207. Create Env File for API LINK
+13032208. Using Aciton in MoviePage Comp.
+13032209. Using Redux Promise Middleware
+13032210. View Movies & View API Error
+13032211. Listing Movies with CARD
+13032212. Using GRID
+13032213. Loading Indicator
+https://www.davidhu.io/react-spinners/
+13032214. Create a Component (NewMoviePage.js)
+13032215. Create a Component (MovieForm.js)
+13032216. Using SemanticUI Form in MovieForm.js 
+13032217. onSubmit for Movie Form
+13032218. Question
+13032219. Inline Error with SemanticUI
