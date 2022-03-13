@@ -27,6 +27,9 @@ export default class Header extends Component {
           <Menu.Item as={Link} to="movies">
             Movies
           </Menu.Item>
+          <Menu.Item as={Link} to="movies/new">
+            Add New
+          </Menu.Item>
         </Container>
       </Menu>
     );
