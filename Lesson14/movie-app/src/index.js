@@ -10,9 +10,27 @@ import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
+/*<link
+    async
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/semantic-ui@2/dist/semantic.min.css"
+  /> */
+const semanticUICSS = document.createElement("link")
+semanticUICSS.rel="stylesheet"
+semanticUICSS.href ="https://cdn.jsdelivr.net/npm/semantic-ui@2/dist/semantic.min.css"
+document.head.appendChild(semanticUICSS)
+
+/**
+ * <script src="https://cdn.jsdelivr.net/npm/semantic-ui-react/dist/umd/semantic-ui-react.min.js"></script>
+ */
+const semanticUIJS = document.createElement("script")
+semanticUIJS.src = "https://cdn.jsdelivr.net/npm/semantic-ui-react/dist/umd/semantic-ui-react.min.js"
+document.head.appendChild(semanticUIJS)
+
 
 /*const allExtensions = compose(applyMiddleware(thunk),
 window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())*/
+
 
 const allExtensions = composeWithDevTools(applyMiddleware(thunk));
 

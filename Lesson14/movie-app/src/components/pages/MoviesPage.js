@@ -6,7 +6,7 @@ import MoviesList from '../MoviesList'
 
 export class MoviesPage extends Component {
     static propTypes = {
-        movieReducer:PropTypes.array.isRequired
+        movieReducer:PropTypes.object.isRequired
     }
   render() {
       //console.log(this.props)
