@@ -5,7 +5,7 @@
 13032205. Logger Middleware
 13032206. Create A Action (FETCH-MOVIES-ERROR)
 13032207. Create Env File for API LINK
-13032208. Using Aciton in MoviePage Comp.
+13032208. Using Action in MoviePage Comp.
 13032209. Using Redux Promise Middleware
 13032210. View Movies & View API Error
 13032211. Listing Movies with CARD
