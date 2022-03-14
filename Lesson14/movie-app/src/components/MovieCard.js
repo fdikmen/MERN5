@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Card, Button, Image,Icon} from 'semantic-ui-react'
 
-const MovieCard = ({movie}) => (
+const MovieCard = ({movie,deleteMovie}) => (
   <Card>
     <Image src={movie.cover} wrapped ui={false} />
     <Card.Content>
@@ -17,7 +17,7 @@ const MovieCard = ({movie}) => (
     <Card.Content extra>      
     <div className='ui two buttons'>
                  
-      <Button animated color='red' size='mini'>
+      <Button animated color='red' size='mini' onClick={()=>{deleteMovie(movie.id)}}>
           <Button.Content visible>Del</Button.Content>
           <Button.Content hidden>
             <Icon name="trash" />

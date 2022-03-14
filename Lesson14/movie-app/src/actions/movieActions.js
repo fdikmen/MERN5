@@ -25,7 +25,7 @@ export function fetchMovies() {
 
 //With Promise Middleware
 export function newMovies({title,cover}) {
-    console.log("MovieAction",title,cover)
+    //console.log("MovieAction",title,cover)
     return (dispatch)=>
     {
         dispatch({type:"NEW_MOVIES",payload:axios.post(`${API_BASE}/movies`,{title,cover})
@@ -33,6 +33,39 @@ export function newMovies({title,cover}) {
         .then(res=>res.data)})
     }   
 }
+
+
+//With Promise Middleware
+export function getMovie(id) {
+    return (dispatch)=>
+    {
+        dispatch({type:"GET_MOVIE",payload:axios.get(`${API_BASE}/movies/${id}`).then(res=>res.data)})
+    }   
+}
+
+//With Promise Middleware
+export function updateMovies({id,title,cover}) {
+    console.log("UPDATE MovieAction",id,title,cover)
+    return (dispatch)=>
+    {
+        dispatch({type:"UPDATE_MOVIES",payload:axios.put(`${API_BASE}/movies/${id}`,{title,cover})
+        //.then(res=>console.log("API POST RESULT:",res))})
+        .then(res=>res.data)})
+    }   
+}
+
+
+//CRUD + GET ALL
+//With Promise Middleware
+export function deleteMovie(id) {
+    console.log("DELETE MovieAction",id)
+    return (dispatch)=>
+    {
+        dispatch({type:"DELETE_MOVIE",
+        payload:axios.delete(`${API_BASE}/movies/${id}`).then(res=>Object.assign({},res,{id}))})
+    }   
+}
+
 
 
 

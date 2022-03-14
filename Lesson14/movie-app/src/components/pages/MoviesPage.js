@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import MoviesList from '../MoviesList'
-import { fetchMovies } from '../../actions/movieActions'
+import { fetchMovies,deleteMovie } from '../../actions/movieActions'
 
 
 export class MoviesPage extends Component {
@@ -17,7 +17,9 @@ export class MoviesPage extends Component {
       //console.log(this.props)
     return (
       <div>Movies Page
-          <MoviesList movieReducer={this.props.movieReducer}/>
+          <MoviesList 
+          deleteMovie={this.props.deleteMovie}
+          movieReducer={this.props.movieReducer}/>
       </div>
     )
   }
@@ -27,7 +29,7 @@ const mapStateToProps = ({movieReducer}) => ({
     movieReducer
 })
 
-const mapDispatchToProps = {fetchMovies}
+const mapDispatchToProps = {fetchMovies,deleteMovie}
 
 //export default MoviesPage
 export default connect(mapStateToProps, mapDispatchToProps)(MoviesPage)
