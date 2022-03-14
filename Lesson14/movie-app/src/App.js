@@ -19,6 +19,7 @@ export default class App extends Component {
             <Route path="/" element={<h1>Home Page</h1>} />
             <Route path="/movies" element={<MoviesPage />} />
             <Route path="/movies/new" element={<NewMoviePage/>} />
+            <Route path="/movies/new/:id" element={<NewMoviePage/>} />
           </Routes>
         </Container>
         <Footer />

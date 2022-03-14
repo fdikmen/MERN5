@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import { Button, Form, Image, Message } from "semantic-ui-react";
-
+import { Navigate } from "react-router-dom";
 export default class MovieForm extends Component {
   state = {
     title: "",
     cover: "",
     errors: "",
+    done:false
   };
   render() {
     //console.log("FORM",this.props)
@@ -19,6 +20,7 @@ export default class MovieForm extends Component {
       this.setState({ errors });
       if (Object.keys(errors).length === 0) {
         this.props.newMovies(this.state);
+        this.setState({done:true})
       }
       //console.log(this.state)
       //alert("Submit")
@@ -36,21 +38,30 @@ export default class MovieForm extends Component {
     return (
       <div>
         <h2>Movie Form</h2>
-        <Form onSubmit={onSubmitFormData} loading={this.props.newMovieReducer.fetching}>
-        
- {!this.props.newMovieReducer.error.message ? (
-            ""
-          ) : (
-            <Form.Field>
-              <Message negative>
-                <Message.Header>
-                  Error with POST API
-                </Message.Header>
-                <p>{this.props.newMovieReducer.error.message}</p>
-              </Message>
-            </Form.Field>
-          )}
+        <Form
+          onSubmit={onSubmitFormData}
+          loading={this.props.newMovieReducer.fetching}
+        >
 
+          {/* IF POST SUCCESS */}
+          {this.props.newMovieReducer.fetched && this.state.done
+          ? <Navigate to='/movies'/>
+          : null
+          }
+
+          {/* IF API HAS ERROR */}
+            {!this.props.newMovieReducer.error.message ? (
+              ""
+            ) : (
+              <Form.Field>
+                <Message negative>
+                  <Message.Header>Error with POST API</Message.Header>
+                  <p>{this.props.newMovieReducer.error.message}</p>
+                </Message>
+              </Form.Field>
+            )}
+
+              {/* IF FORM IS BLANK */}
           {!this.state.errors.title && !this.state.errors.cover ? (
             ""
           ) : (
