@@ -1,0 +1,18 @@
+14032201. Summary
+14032202. Create a Reducer for MovieForm
+14032203. Using Store in Form Comp.
+14032204. Using Action with submit button
+14032205. Loading with post action
+14032206. Error Handle on submit
+14032207. Coding newMovieReducer
+14032208. Redirect - Navigate
+14032209. Navigate Bug Fixed
+14032210. Edit and Delete Button
+14032211. Link for Edit Button
+14032212. Route for Edit Button
+14032213. Using Params in ClassComponent
+14032214. Get Movie for Edit Process
+14032215. Bug Fixed(Get Movie for Edit Process) 
+14032216. Update Button
+14032217. Delete Button
+14032218. Coding Home Page
