@@ -18,7 +18,7 @@ useEffect(() => {
   console.log("Merge for componentDidMount & componentDidUpdate")
 })
 
-//componentDidMount
+//componentWillUnMount
   useEffect(() => {
   console.log("UseEffect for componentDidMount")
   const myTimer = setInterval(()=>{
