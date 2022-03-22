@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "mail": "^0.2.3",
+    "slugify": "^1.6.5"
+  }
+}

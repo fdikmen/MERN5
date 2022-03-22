@@ -1,0 +1,35 @@
+22032201. Summary
+22032202. NPM
+22032203. Using and Installing package & Questions
+22032204. Import vs Require
+22032205. Local & Global Package
+22032206. Local & Global Package V2
+npm i [packageName]    --->Local
+npm i [packageName] -g --->Global
+npm root -g --->Folder URL
+npm list -g --->Listing global package
+npm list -g --depth=1
+22032207. Create a project with NPM
+npm init -->create package.json 
+npm init -y -->create default package.json
+22032208. Package.json
+npm set init.[xxxxyyyyy]
+npm config ls -l
+22032209. npm-cache
+axios
+npm-cache i axios
+22032210. --save / -s / --no-save
+npm i [packageName] --no-save
+22032211. Dependencies
+Installing all libs.: npm i
+22032212. Custom Verison for Package
+npm i packageName@X.X.X
+22032213. Outdated package
+npm outdated
+22032214. devDependencies
+npm i [packageName] --save-dev
+22032215. Script Define
+22032216. Installing multi-package
+npm i [packageName1] [packageName2] [packageName3] [packageName4]
+22032217. Remove a package
+npm uninstall [packageName]

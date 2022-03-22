@@ -1,0 +1,22 @@
+{
+  "name": "first-prj",
+  "version": "2.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "alertHi": "echo \"Hi!!!\"",
+    "deploy": "npm run build && mv build/index.html build/200.html && surge build fd-app.surge.sh"
+  },
+  "author": "FIRAT DIKMEN <frtdkmn.gmail.com> (https://firatdikmen.com/)",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "react-dom": "^17.0.2",
+    "slugify": "^1.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
