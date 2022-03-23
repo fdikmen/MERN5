@@ -1,0 +1,14 @@
+23032201. Summary
+23032202. Questions
+23032203. Introduction to Events
+23032204. Events & Event Emitter
+23032205. Summary for Event & Questions
+23032206. Using params with Event-Emit
+23032207. Once
+23032208. __filename & __dirname
+23032209. File IO - Read File
+fs.ReadFile("path+fileName","arrowFunc")
+23032210. Async with Read File (fs.readFileSync())
+23032211. Create a File & Write data to File
+23032212. Delete a File
+23032213. Summary for Event & FileIO

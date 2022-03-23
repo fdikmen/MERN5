@@ -13,17 +13,17 @@ npm list -g --depth=1
 npm init -->create package.json 
 npm init -y -->create default package.json
 22032208. Package.json
-npm set init.[xxxxyyyyy]
+npm set init.[xxxxKEYxxxxx] [yyyyNEW-VALUEyyy]
 npm config ls -l
 22032209. npm-cache
-axios
-npm-cache i axios
+npm i npm-cache -g
+npm-cache i [packageName]
 22032210. --save / -s / --no-save
 npm i [packageName] --no-save
 22032211. Dependencies
 Installing all libs.: npm i
-22032212. Custom Verison for Package
-npm i packageName@X.X.X
+22032212. Custom Version for Package
+npm i packageName@X.X.X 
 22032213. Outdated package
 npm outdated
 22032214. devDependencies
@@ -33,3 +33,4 @@ npm i [packageName] --save-dev
 npm i [packageName1] [packageName2] [packageName3] [packageName4]
 22032217. Remove a package
 npm uninstall [packageName]
+npm uninstall [packageName] --no-save
