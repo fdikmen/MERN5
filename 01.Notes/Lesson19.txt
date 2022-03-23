@@ -22,7 +22,7 @@ npm-cache i axios
 npm i [packageName] --no-save
 22032211. Dependencies
 Installing all libs.: npm i
-22032212. Custom Verison for Package
+22032212. Custom Version for Package
 npm i packageName@X.X.X
 22032213. Outdated package
 npm outdated
