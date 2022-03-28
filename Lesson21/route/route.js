@@ -9,23 +9,22 @@ const server = http.createServer((request, response) => {
     } else {
       response.write("404 Not!");
     }
-  }
-  else{
-      switch (request.method) {
-          case "POST":
-            response.write("POST Method!");
-              break;
-              case "PUT":
-                response.write("PUT Method!");
-                  break;
-                  case "DELETE":
-                    response.write("DELETE Method!");
-                      break;
-      
-          default:
-            response.write("OTHER Method!");
-              break;
-      }
+  } else {
+    switch (request.method) {
+      case "POST":
+        response.write("POST Method!");
+        break;
+      case "PUT":
+        response.write("PUT Method!");
+        break;
+      case "DELETE":
+        response.write("DELETE Method!");
+        break;
+
+      default:
+        response.write("OTHER Method!");
+        break;
+    }
   }
   response.end();
 });
