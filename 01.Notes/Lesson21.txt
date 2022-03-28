@@ -8,7 +8,7 @@
 27032208. Nodemon
 npm i nodemon
 npm i nodemon -g
-suda npm i nodemon -g
+sudo npm i nodemon -g
 npm i nodemon --save-dev
 27032209. Questions
 27032210. HTTP File Serve
