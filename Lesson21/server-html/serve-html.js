@@ -2,7 +2,7 @@ const fs = require('fs')
 const http = require('http')
 
 const myServer = http.createServer((request,response)=>{
-    console.log("Yes, its a request!")
+    console.log("Yes, its a request!",request.url)
     response.writeHead(200,{'content-type':'text/html;charset=utf-8'})
     fs.readFile('index.html',(err,data)=>{
         if (err) {

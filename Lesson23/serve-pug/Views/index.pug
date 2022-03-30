@@ -1,0 +1,43 @@
+html 
+    head 
+        title Hello PUG! 
+    
+    body 
+        //- This is Comment Line
+        include menu
+        br
+        =phone
+        br
+        - var jobTitle = 'Principal Research Specialist'
+        - var jobDesc = "Customer"
+        hr
+        =jobTitle
+        br
+        =jobDesc
+        br
+        - var city = "Julieland"
+        | City : #{city.toUpperCase()}
+        hr
+        span(style="color:white;background-color:red;")
+        | PUG is HERE!
+        br
+        | Hello PUG in new line... #{name}
+        hr
+        - var friends = 1
+        case friends
+            when 0
+                p you have no friends
+            when 1
+                p you have a friend
+            default
+                p you have #{friends} friends
+        hr
+        ul
+            each val, index in ['zero', 'one', 'two']
+                li= index + ': ' + val
+        hr
+        - const itemName = "Paradigm"
+        - function capitalize(param) {return param.toUpperCase()}
+        | ITEM-NAME : #{capitalize(itemName)}
+        hr
+        include footer.pug
