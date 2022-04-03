@@ -1,0 +1,25 @@
+03042201. Summary
+03042202. ExpressJS-First App
+03042203. ExpressJS-Static Folder
+03042204. Postman
+03042205. Summary
+03042206. Routing Operators
+? , * , +
+03042207. GET/POST/PUT/DELETE & ALL
+03042208. Send Params with URL in GET
+03042209. Router Object in ExpressJS
+03042210. Middleware with ExpressJS
+request ---------> response
+request ----> Middleware (next)---> response
+        <----
+
+///GET PRODUCT PRICE
+request-GetProdPrice ------------> response---XX $
+request-GetProdPrice ------> Middleware (XX+10$ = YY $) ------> response--YY $
+
+03042211. Questions
+03042212. Create a Middleware
+03042213. Error Handling Middleware
+Middleware--->(next)--->Route--->(next)---->ErrorMiddleware
+
+03042214. Express Generator
