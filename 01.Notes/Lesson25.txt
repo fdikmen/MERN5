@@ -1,0 +1,13 @@
+04042201. Summary
+04042202. What is DBMS
+04042203. What is NoSQL
+04042204. Why should you use a NoSQL DB
+04042205. When should it be used?
+04042206. Question
+04042207. What is MongoDB
+1-0 ---> Asembly --> C/C++ ---> PHP,C#,Java,Javascript,Python
+04042208. Installation MongoDB
+https://www.mongodb.com/docs/manual/administration/install-community/
+https://www.mongodb.com/docs/manual/administration/install-community/
+04042208. MongoDB Compass / RoboMongo
+04042209. Using MongoDB
