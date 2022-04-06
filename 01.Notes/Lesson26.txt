@@ -1,0 +1,25 @@
+06042201. Summary
+06042202. End Point Table
+06042203. Create Project with Express
+npm install -g express-generator
+Express --view=pug  movieapp-api
+cd movieapp-api
+npm install
+npm start
+06042204. mongoose
+06042205. Connect to MongoDB from NodeJS
+npm install mongoose
+
+06042206. Create Model: Movie.js
+06042207. Create GET Route For Movie (Movie.js)
+06042208. Create POST Route For Movie (Movie.js)
+06042209. Summary
+06042210. Auto Mapping in post method
+06042211. Update GET Route For Movie (Movie.js)
+
+06042212. Create GET Route For A Movie
+/api/movies/:movie_id
+06042213. Error Handler
+06042214. Create PUT Route For A Movie
+06042215. Using new params in findByIdAndUpdate
+06042216. Create DELETE Route For Movie (Movie.js)

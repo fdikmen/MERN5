@@ -16,4 +16,4 @@ const MovieSchema = new Schema({
     createdAt:{type:Date,default:Date.now}
 })
 
-module.exports = mongoose.model("movie",MovieSchema)
+module.exports = mongoose.model("movies",MovieSchema)
