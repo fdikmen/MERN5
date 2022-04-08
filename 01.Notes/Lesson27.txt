@@ -1,0 +1,10 @@
+08042201. Summary
+08042202. Create get-top10 Films Route For Movie
+08042203. Create get-beetwen year Films Route For Movie
+
+https://www.mongodb.com/docs/manual/reference/operator/query-comparison/
+
+08042204. Folder Structure
+08042205. Aggregate
+08042206. Questions
+08042207. Advices
