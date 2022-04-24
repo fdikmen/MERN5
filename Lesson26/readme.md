@@ -1,4 +1,5 @@
 # movieapp-api
+
 Movie App api application encoded with NodeJS
 
 <h1 style="text-align: center;"><strong><span style="font-family: Calibri, sans-serif;">Method List</span></strong></h1>
@@ -74,7 +75,7 @@ Movie App api application encoded with NodeJS
                 <p><span style="font-family: Calibri, sans-serif;">PUT</span></p>
             </td>
             <td style="border-bottom:2px solid #9cc2e5; border-left:none; border-right:2px solid #9cc2e5; border-top:none; vertical-align:top; width:180px;">
-                <p><span style="font-family: Calibri, sans-serif;">{&apos;name&apos;:&apos;foo&apos;, &apos;surname&apos;:&apos;bar&apos;}</span></p>
+                <p><span style="font-family: Calibri, sans-serif;">{'name':'foo', 'surname':'bar'}</span></p>
             </td>
             <td style="border-bottom:2px solid #9cc2e5; border-left:none; border-right:2px solid #9cc2e5; border-top:none; vertical-align:top; width:151px;">
                 <p><span style="font-family: Calibri, sans-serif;">Update a movie with new info.</span></p>
@@ -110,7 +111,7 @@ Movie App api application encoded with NodeJS
         </tr>
         <tr>
             <td style="background-color:#deeaf6; border-bottom:2px solid #9cc2e5; border-left:2px solid #9cc2e5; border-right:2px solid #9cc2e5; border-top:none; vertical-align:top; width:209px;">
-                <p><span style="font-family: Calibri, sans-serif;"><strong>/api/movies/between/</strong></span></p>
+                <p><span style="font-family: Calibri, sans-serif;"><strong>/api/movies/</strong></span></p>
                 <p><span style="font-family: Calibri, sans-serif;"><strong>:start_year/:end_year</strong></span></p>
             </td>
             <td style="background-color:#deeaf6; border-bottom:2px solid #9cc2e5; border-left:none; border-right:2px solid #9cc2e5; border-top:none; vertical-align:top; width:65px;">
@@ -166,7 +167,7 @@ Movie App api application encoded with NodeJS
                 <p><span style="font-family: Calibri, sans-serif;">POST</span></p>
             </td>
             <td style="border-bottom:2px solid #9cc2e5; border-left:none; border-right:2px solid #9cc2e5; border-top:none; vertical-align:top; width:217px;">
-                <p><span style="font-family: Calibri, sans-serif;">{name: &apos;foo&apos;, surname:&apos;bar&apos;, bio:&apos;lorem ipsum&apos; }</span></p>
+                <p><span style="font-family: Calibri, sans-serif;">{name: 'foo', surname:'bar', bio:'lorem ipsum' }</span></p>
             </td>
             <td style="border-bottom:2px solid #9cc2e5; border-left:none; border-right:2px solid #9cc2e5; border-top:none; vertical-align:top; width:141px;">
                 <p><span style="font-family: Calibri, sans-serif;">Create a new director.</span></p>
@@ -194,7 +195,7 @@ Movie App api application encoded with NodeJS
                 <p><span style="font-family: Calibri, sans-serif;">PUT</span></p>
             </td>
             <td style="border-bottom:2px solid #9cc2e5; border-left:none; border-right:2px solid #9cc2e5; border-top:none; vertical-align:top; width:217px;">
-                <p><span style="font-family: Calibri, sans-serif;">{&apos;name&apos;:&apos;foo&apos;, &apos;surname&apos;:&apos;bar&apos;, &apos;bio&apos;: &apos;lorem&apos;}</span></p>
+                <p><span style="font-family: Calibri, sans-serif;">{'name':'foo', 'surname':'bar', 'bio': 'lorem'}</span></p>
             </td>
             <td style="border-bottom:2px solid #9cc2e5; border-left:none; border-right:2px solid #9cc2e5; border-top:none; vertical-align:top; width:141px;">
                 <p><span style="font-family: Calibri, sans-serif;">Update a director with new info.</span></p>
@@ -226,7 +227,7 @@ Movie App api application encoded with NodeJS
                 <p><span style="font-family: Calibri, sans-serif;">Empty</span></p>
             </td>
             <td style="border-bottom:2px solid #9cc2e5; border-left:none; border-right:2px solid #9cc2e5; border-top:none; vertical-align:top; width:141px;">
-                <p><span style="font-family: Calibri, sans-serif;">The director&apos;s top 10 films.</span></p>
+                <p><span style="font-family: Calibri, sans-serif;">The director's top 10 films.</span></p>
             </td>
         </tr>
     </tbody>
@@ -258,7 +259,7 @@ Movie App api application encoded with NodeJS
                 <p><span style="font-family: Calibri, sans-serif;">POST</span></p>
             </td>
             <td style="background-color:#deeaf6; border-bottom:2px solid #9cc2e5; border-left:none; border-right:2px solid #9cc2e5; border-top:none; vertical-align:top; width:302px;">
-                <p><span style="font-family: Calibri, sans-serif;">{ username: &apos;foo&apos;, password:&apos;1234&apos; }</span></p>
+                <p><span style="font-family: Calibri, sans-serif;">{ username: 'foo', password:'1234' }</span></p>
             </td>
             <td style="background-color:#deeaf6; border-bottom:2px solid #9cc2e5; border-left:none; border-right:2px solid #9cc2e5; border-top:none; vertical-align:top; width:132px;">
                 <p><span style="font-family: Calibri, sans-serif;">Create a new user.</span></p>
@@ -272,7 +273,7 @@ Movie App api application encoded with NodeJS
                 <p><span style="font-family: Calibri, sans-serif;">POST</span></p>
             </td>
             <td style="border-bottom:2px solid #9cc2e5; border-left:none; border-right:2px solid #9cc2e5; border-top:none; vertical-align:top; width:302px;">
-                <p><span style="font-family: Calibri, sans-serif;">{ username: &apos;foo&apos;, password:&apos;1234&apos; }</span></p>
+                <p><span style="font-family: Calibri, sans-serif;">{ username: 'foo', password:'1234' }</span></p>
             </td>
             <td style="border-bottom:2px solid #9cc2e5; border-left:none; border-right:2px solid #9cc2e5; border-top:none; vertical-align:top; width:132px;">
                 <p><span style="font-family: Calibri, sans-serif;">Generate a token.</span></p>
